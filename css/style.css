@@ -42,40 +42,17 @@ main p {
     justify-self: center;
 }
 
-/* Style 'show menu' label button and hide it by default */
-
-.main-menu .show-menu {
-    text-decoration: none;
-    color: #fff;
-    background: #8aa8bd;
-    text-align: center;
-    padding: 10px 15px;
-    display: none;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
-.main-menu .show-menu span {
-    padding-left: 35px;
-}
-
-/* Hide checkbox */
-
-.main-menu input[type=checkbox] {
-    display: none;
-}
-
-/* Show menu when invisible chackbox is checked */
-
-.main-menu input[type=checkbox]:checked ~ #menu {
-    display: block;
-}
-
 .main-menu {
     grid-area: menu;
+    background: #8aa8bd;
 }
 
 
+.nav { width: 100%; }
+.nav ul { list-style: none; padding: 0px; margin: 0px; font-weight: bold; text-align: center; }
+.nav ul li { display: inline-block; }
+.nav ul li a { display: block; padding: 10px 20px; text-decoration: none; color: #444; }
+.nav ul li a:hover { background-color: #888; color: #fff; }
 
 @media (min-width: 500px) {
     .container {
