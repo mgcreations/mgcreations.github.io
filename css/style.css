@@ -116,8 +116,30 @@ main p {
     }
 
     .main-menu {
-        align-self: center;
-        justify-self: end;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    #chkToggle:checked + ul.main-nav {
+        display: flex;
+    }
+
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        margin-right: 30px;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .navbar-toggle {
+        display: none;
     }
 
     
