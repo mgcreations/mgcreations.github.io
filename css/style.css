@@ -25,27 +25,27 @@ main p {
 
 .container {
     display: grid;
-    margin: 0 2rem;
-    grid-template-columns: 2fr 6fr 4fr;
-    grid-template-rows: 3rem;
-    grid-gap: 2rem 1rem;
+    grid-gap: 2rem;
     grid-template-areas: 
-        "logo menu menu"
-        "content content sidebar"
-        "portfolio portfolio portfolio"
-        "footer footer footer";
+            "logo"
+            "menu"
+            "content"
+            "sidebar"
+            "portfolio"
+            "footer";
 }
 
 
 .logo {
     grid-area: logo;
     align-self: center;
+    justify-self: center;
 }
 
 .main-menu {
     grid-area: menu;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
 }
 
 .main-menu ul {
@@ -65,6 +65,42 @@ main p {
     margin-right: 0;
 }
 
+@media (min-width: 500px) {
+    .container {
+        margin: 0 2rem;
+        grid-gap: 2rem 1rem;
+        grid-template: 3fr 1fr;
+        grid-template-rows: 3rem;
+        grid-template-areas: 
+            "logo logo"
+            "menu menu"
+            "content sidebar"
+            "portfolio portfolio"
+            "footer footer";
+    }
+
+    
+}
+
+@media (min-width: 700px) {
+    .container {
+        margin: 0 2rem;
+        grid-gap: 2rem 1rem;
+        grid-template-columns: 2fr 6fr 4fr;
+        grid-template-rows: 3rem;
+        grid-template-areas: 
+        "logo menu menu"
+        "content content sidebar"
+        "portfolio portfolio portfolio"
+        "footer footer footer";
+    }
+
+    .main-menu {
+        justify-self: end;
+    }
+
+}
+
 .content-area {
     grid-area: content;
 }
@@ -80,7 +116,7 @@ main p {
 
 .clients {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: auto;
     grid-column: 1rem;
 }
