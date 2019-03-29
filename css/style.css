@@ -77,7 +77,11 @@ main p {
     font-size: 24px;
 }
 
-.active {
+#chkToggle {
+    display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
     display: block;
 }
 
