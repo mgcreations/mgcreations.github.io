@@ -42,68 +42,39 @@ main p {
     justify-self: center;
 }
 
+/* Style 'show menu' label button and hide it by default */
+
+.main-menu .show-menu {
+    text-decoration: none;
+    color: #fff;
+    background: #8aa8bd;
+    text-align: center;
+    padding: 10px 15px;
+    display: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.main-menu .show-menu span {
+    padding-left: 35px;
+}
+
+/* Hide checkbox */
+
+.main-menu input[type=checkbox] {
+    display: none;
+}
+
+/* Show menu when invisible chackbox is checked */
+
+.main-menu input[type=checkbox]:checked ~ #menu {
+    display: block;
+}
+
 .main-menu {
     grid-area: menu;
-    display: block;
-    width: 100%;
-    background: #8aa8bd;
-    line-height: 1.6em;
-    font-weight: 400;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    margin: 0 auto;
 }
 
-/* Strip the ul of padding and list styling */
-
-.main-menu ul {
-    list-style-type: none;
-    margin: 0 auto;
-    padding-left: 0;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    background: #8aa8bd;
-}
-
-/* create a horizontal list with spacing */
-.main-menu li {
-    display: inline-block;
-
-}
-
-/* Style for menu links */
-.main-menu li a {
-    display: block;
-    min-width: 140px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    background: #8aa8bd;
-    text-decoration: none;
-    margin-left: -5px;
-    padding: 10px 0;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-/* Hover state for top level links */
-.main-menu li:hover a {
-    color: #4db3ff;
-    background-color: #ccddee;
-}
-
-/* Style for dropdown links */
-.main-menu li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-}
 
 
 @media (min-width: 500px) {
