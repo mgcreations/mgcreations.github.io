@@ -38,8 +38,15 @@ main p {
 
 .logo {
     grid-area: logo;
-    align-self: center;
-    justify-self: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
 }
 
 .main-menu {
@@ -90,7 +97,6 @@ main p {
         margin: 0 2rem;
         grid-gap: 2rem 1rem;
         grid-template: 3fr 1fr;
-        grid-template-rows: 3rem;
         grid-template-areas: 
             "logo logo"
             "menu menu"
@@ -113,6 +119,11 @@ main p {
         "content content sidebar"
         "portfolio portfolio portfolio"
         "footer footer footer";
+    }
+
+    .logo img {
+        max-width: 125px;
+        padding-top: 0;
     }
 
     .main-menu {
