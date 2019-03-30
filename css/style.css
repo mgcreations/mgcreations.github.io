@@ -120,6 +120,26 @@ main p {
     line-height: 1.2;
 }
 
+.features {
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.freature {
+    background-color: #333;
+    padding: 20px;
+}
+
+.feature-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
 @media (min-width: 500px) {
     .container {
         margin: 0 2rem;
@@ -180,6 +200,18 @@ main p {
 
     .navbar-toggle {
         display: none;
+    }
+
+    .hero-inner {
+        max-width: 50vw;
+        margin: 0;
+        padding-left: 2rem;
+    }
+
+    .hero-inner h2 {
+        font-size: 3rem;
+        text-align: left;
+        line-height: 1.2;
     }
 
     
