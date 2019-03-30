@@ -92,6 +92,34 @@ main p {
     display: block;
 }
 
+
+.content-area {
+    grid-area: content;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://unsplash.it/2000/1500?image=1067);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-inner {
+    max-width: 80vw;
+    margin: auto;
+    padding-left: .5rem;
+}
+
+.hero-inner h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    line-height: 1.2;
+}
+
 @media (min-width: 500px) {
     .container {
         margin: 0 2rem;
@@ -157,9 +185,7 @@ main p {
     
 }
 
-.content-area {
-    grid-area: content;
-}
+
 
 .sidebar {
     grid-area: sidebar;
