@@ -1,18 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Cousine');
+
+:root {
+    --primary-text-color: #004785;
+    --secondary-text-color: #00274A;
+    --highlight-text-color: #fff;
+    --primary-color: #488fcd;
+    --secondary-color: #00274A;
+    --highlight-color: #D18000;
+}
+
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-size: .8rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;    
 }
 
 body {
     background: #fbfbfb;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--primary-text-color);
 }
 
-h1, h2, h3 {
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+    margin: 2.75rem 0 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+h1 {
     margin-top: 0;
+    font-size: 3.052em;
+}
+
+h2 {
+    font-size: 2.441em;
+}
+
+h3 {
+    font-size: 1.953em;
+}
+
+h4 {
+    font-size: 1.563em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+small, .text_small {
+    font-size: 0.8em;
 }
 
 header h1 {
@@ -52,8 +97,8 @@ main p {
 .main-menu {
     grid-area: menu;
     font-size: 18px;
-    background: #333;
-    border: 1px solid #3e3e3e;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
     padding-bottom: 10px;
     
 }
@@ -74,6 +119,10 @@ main p {
 .main-nav li {
     margin: 15px auto;
     text-align: center;
+}
+
+.main-nav a:hover {
+    color: var(--secondary-text-color);
 }
 
 .navbar-toggle {
@@ -98,7 +147,7 @@ main p {
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://unsplash.it/2000/1500?image=1067);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9GR);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,7 +163,16 @@ main p {
 }
 
 .hero-inner h2 {
-    font-size: 2rem;
+    font-size: 2.44em;
+    font-family: 'Cousine', monospace;
+    text-align: center;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.hero-inner h3 {
+    font-size: 1.95em;
+    font-family: 'Cousine', monospace;
     text-align: center;
     color: #fff;
     line-height: 1.2;
@@ -123,22 +181,31 @@ main p {
 .features {
     box-sizing: border-box;
     padding: 20px;
+    color: var(--highlight-text-color);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
 }
 
-.freature {
-    background-color: #333;
+.feature {
+    background-color: var(--secondary-color);
     padding: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .feature-img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    
 }
+
+.feature h3 {
+    font-size: 1.8em;
+    margin-top: -0.05em;
+    text-align: center;
+}
+
 
 @media (min-width: 500px) {
     .container {
@@ -160,7 +227,7 @@ main p {
     .container {
         margin-top: 2rem;
         grid-gap: 2rem 1rem;
-        grid-template-columns: 2fr 8fr 2fr;
+        grid-template-columns: 4fr 6fr 2fr;
         grid-template-rows: 4rem;
         grid-template-areas: 
         "logo menu menu"
@@ -170,8 +237,8 @@ main p {
     }
 
     .logo img {
-        max-width: 180px;
-        margin-top: -.5rem;
+        max-width: 350px;
+        margin-top: 0;
         padding-top: 0;
     }
 
@@ -209,15 +276,20 @@ main p {
     }
 
     .hero-inner h2 {
-        font-size: 3rem;
+        font-size: 3.1em;
         text-align: left;
         line-height: 1.2;
     }
 
-    
+    .hero-inner h3 {
+        font-size: 2em;
+        font-family: 'Cousine', monospace;
+        text-align: center;
+        color: #fff;
+        line-height: 1.2;
+    }
+
 }
-
-
 
 .sidebar {
     grid-area: sidebar;
