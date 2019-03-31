@@ -220,7 +220,11 @@ main p {
             "footer footer";
     }
 
-    
+    .feature-img {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
 }
 
 @media (min-width: 700px) {
