@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CSS Grid Template Mockup</title>
 
     <link rel="shortcut icon" href="/favicon.ico">
 
@@ -13,18 +13,29 @@
 <body>
     <div class="container">
         <header class="logo">
-            <h1><a href="index.html">CSS Grid Demo</a></h1>
+            <h1>
+                <a href="index.html">
+                    <img class="logo-img" src="./images/logo.svg" alt="logo">
+                </a>
+            </h1>
         </header>
 
         
         
         <nav class="main-menu">
-            <ul>
+
+            <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                Menu
+            </label>
+            
+            <input type="checkbox" id="chkToggle"></input>
+            
+            <ul class="main-nav">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#" class="nav-links">Home</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#" class="nav-links">Services</a>
                 </li>
                 <li>
                         <a href="#">Services</a>
@@ -33,50 +44,116 @@
                     <a href="#">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#" class="nav-links">Contact</a>
                 </li>
             </ul>
         </nav>
 
 
-        
+        <div class="hero">
+                <div class="hero-inner">
+                    <h2>{we.build}</h2>
+                    <h3>stunning websites</h3>
+                </div>
+            </div>
 
-        <main class="content-area">
-            <h2>Welcome</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit officiis ipsum adipisci quis consequuntur magnam corrupti voluptates numquam ad tenetur debitis eos tempore, eligendi pariatur nobis at delectus possimus aliquam veniam atque. Distinctio rerum illum commodi accusantium sit fuga nobis, ipsam magnam id atque iste eligendi? Eos, aut est.</p>
-        </main>
+        <div class="content-area">
 
-        <aside class="sidebar">
-            <h3>Additional Stuff</h3>
+            <h2>Website & Graphic Design</h2>
+            <h3>with Stunning Results</h3>
+            <p>You probably have much more important things to do than to fiddle around with website development and design for a large amount of time. Small businesses need a lot of work and attention or else they are at risk of failing. So, focus on the bigger issues and let MG Creations get your website online.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <img class="feature-img" src="./images/Graphic-Design.svg"/>
+                    <h3>Graphic Design</h3>
+                    <p>Develop your brand with graphic design that is creative, responsive, fresh and tailor-made for you. MG Creations is able to design for both print and electronic media, from custom logo design to a complete branding revamp.</p>
+                </div>
+                <div class="feature">
+                    <img class="feature-img" src="./images/Web-Design.svg"/>
+                    <h3>Website Design</h3>
+                    <p>MG Creations view web design from a creative and strategic perspective. Every website created, every element and feature developed for our clients, should not only be stunning, but it should also have purpose. Designing website from basic html to CMS.</p>
+                </div>
+                <div class="feature">
+                    <img class="feature-img" src="./images/Shopping-Website.svg"/>
+                    <h3>eCommerces Website</h3>
+                    <p>Have a great idea for a product and need help building a professional ecommerce website? MG Creations is here to help design a professional ecommerce web presence for you with one of the most comprehensive and flexible ecommerce platforms.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+            <h3>Need a website?</h3>
+
+            <img src="./images/Computer.svg">
+
+            <ul>
+                <li>Excludes hosting</li>
+                <li>Custom design</li>
+                <li>Mobile Responsive</li>
+            </ul>
+            <h4>From R1650</h4>
+            
+            
+
+            <figure><embed src="https://wakatime.com/share/@7f6f44e6-1ca1-4415-b23f-0856b09b236c/d0966883-c03a-4e80-8f59-33b41a94edee.svg"></embed></figure>
 
             <ul>
                 <li>Items</li>
                 <li>Are</li>
                 <li>Lists</li>
             </ul>
-        </aside>
+        </div>
 
-        <section class="portfolio-wrapper">
+        <div class="portfolio-wrapper">
             <h2>Some of our work</h2>
 
-            <section class="clients">
-                <figure class="client">
+            <div class="artwork">
+                <div>
                     <img src="https://via.placeholder.com/150x150">
-                </figure>
-                <figure class="client">
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150x150">
+                </div>
+                <div class="vertical">
                     <img src="https://via.placeholder.com/150x250">
-                </figure>
-                <figure class="client">
+                </div>
+                <div>
                     <img src="https://via.placeholder.com/150x150">
-                </figure>
-                <figure class="client">
+                </div>
+                <div class="horizontal">
+                    <img src="https://via.placeholder.com/250x150">
+                </div>
+                <div class="big">
+                    <img src="https://via.placeholder.com/250x250">
+                </div>
+                <div>
                     <img src="https://via.placeholder.com/150x150">
-                </figure>
-                <figure class="client">
+                </div>
+                <div>
                     <img src="https://via.placeholder.com/150x150">
-                </figure>
-            </section>
-        </section>
+                </div>
+                <div class="vertical">
+                    <img src="https://via.placeholder.com/150x250">
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150x150">
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150x150">
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150x150">
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150x150">
+                </div>
+                <div class="horizontal">
+                    <img src="https://via.placeholder.com/250x150">
+                </div>
+            </div>
+        </div>
 
         <footer class="footer">
             <p>
