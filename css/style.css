@@ -74,6 +74,7 @@ main p {
     grid-template-areas: 
             "logo"
             "menu"
+            "hero"
             "content"
             "sidebar"
             "portfolio"
@@ -146,7 +147,9 @@ main p {
     grid-area: content;
 }
 
+
 .hero {
+    grid-area: hero;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9GR);
     background-position: center;
     background-size: cover;
@@ -207,6 +210,45 @@ main p {
 }
 
 
+.portfolio-wrapper {
+    grid-area: portfolio;
+}
+
+.artwork > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.artwork > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artwork {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 100px;
+    grid-auto-flow: dense;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
 @media (min-width: 500px) {
     .container {
         margin: 0 2rem;
@@ -215,6 +257,7 @@ main p {
         grid-template-areas: 
             "logo logo"
             "menu menu"
+            "hero hero"
             "content sidebar"
             "portfolio portfolio"
             "footer footer";
@@ -224,6 +267,11 @@ main p {
         margin-right: auto;
         margin-left: auto;
         display: block;
+    }
+
+    .artwork {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: 200px;
     }
 }
 
@@ -235,6 +283,7 @@ main p {
         grid-template-rows: 4rem;
         grid-template-areas: 
         "logo menu menu"
+        "hero hero hero"
         "content content sidebar"
         "portfolio portfolio portfolio"
         "footer footer footer";
@@ -298,23 +347,6 @@ main p {
 .sidebar {
     grid-area: sidebar;
     padding: 1rem;
-}
-
-.portfolio-wrapper {
-    grid-area: portfolio;
-}
-
-.clients {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: auto;
-    grid-column: 1rem;
-}
-
-.client {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .footer {
