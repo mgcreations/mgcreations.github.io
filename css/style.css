@@ -248,6 +248,15 @@ main p {
 }
 
 
+.sidebar {
+    grid-area: sidebar;
+    padding: 1rem;
+    background-color: #9ccdf2;
+}
+
+.sidebar > h3 {
+    font-size: 1.5em;
+}
 
 @media (min-width: 500px) {
     .container {
@@ -344,10 +353,6 @@ main p {
 
 }
 
-.sidebar {
-    grid-area: sidebar;
-    padding: 1rem;
-}
 
 .footer {
     grid-area: footer;
