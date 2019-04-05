@@ -229,8 +229,8 @@ main p {
 .artwork {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-template-rows: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: 150px;
     grid-auto-flow: dense;
 }
 
@@ -256,6 +256,19 @@ main p {
 
 .sidebar > h3 {
     font-size: 1.5em;
+}
+
+.footer {
+    grid-area: footer;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-self: center;
+    justify-self: center;
 }
 
 @media (min-width: 500px) {
@@ -354,8 +367,3 @@ main p {
 }
 
 
-.footer {
-    grid-area: footer;
-    align-self: center;
-    justify-self: center;
-}
