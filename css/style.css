@@ -271,8 +271,41 @@ main p {
 
 .footer-box {
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 10px;
     align-items: center;
     justify-items: center;
+}
+
+.footer-box h4 {
+    grid-column: span 4;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer-box a {
+    text-decoration: none;
+}
+
+.footer-box img {
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#social_media {
+    color: #fff;
+    font-size: 2em;
+}
+
+#follow-us {
+    grid-column: span 4;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
 }
 
 #copyright {
@@ -376,6 +409,10 @@ main p {
         text-align: center;
         color: #fff;
         line-height: 1.2;
+    }
+
+    .footer-box img {
+        max-width: 150px;
     }
 
 }
