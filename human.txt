@@ -1,0 +1,46 @@
+/* TEAM */
+        Chef: Michael Ashworth
+        Twitter: @mgcreations
+        Facebook: /MGCreationsDesign
+        Behance: www.behance.net/mgcreations
+        From: Pietermariterburg, KwaZulu Natal, South Africa
+
+        UI developer: Michael Ashworth
+        Twitter: @mgcreations
+        Facebook: /MGCreationsDesign
+        Behance: www.behance.net/mgcreations
+        From: Pietermariterburg, KwaZulu Natal, South Africa
+
+        Photograghy : Michael Ashworth
+        Twitter: @mgcreations
+        Facebook: /MGCreationsDesign
+        Behance: www.behance.net/mgcreations
+        From: Pietermariterburg, KwaZulu Natal, South Africa
+
+        Graphic Designer : Michael Ashworth
+        Twitter: @mgcreations
+        Facebook: /MGCreationsDesign
+        Behance: www.behance.net/mgcreations
+        From: Pietermariterburg, KwaZulu Natal, South Africa
+
+        Web designer: MG Creations
+        Twitter: @mgcreations
+        Facebook: /MGCreationsDesign
+        Behance: www.behance.net/mgcreations
+        From: Pietermariterburg, KwaZulu Natal, South Africa
+
+/* THANKS */
+
+        Unsplash for the hero image used 
+        (https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9GR) 
+
+        Github for the repository, allowing me to design from various computers. (https://github.com)
+
+        Netlify for the delopment services (www.netlify.com)
+
+/* SITE */
+        Last update:2019/04/07
+        Language: English
+        Doctype:HTML5,  CSS
+        IDE: Visual Studio Code 
+        Software: FileZilla, Photoshop, Illustrator
