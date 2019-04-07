@@ -265,10 +265,24 @@ main p {
     background-color: var(--primary-color);
     color: #fff;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-gap: 20px;
-    align-self: center;
-    justify-self: center;
+}
+
+.footer-box {
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+#copyright {
+    grid-column: span 3;
+    text-align: center;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #fff;
 }
 
 @media (min-width: 500px) {
