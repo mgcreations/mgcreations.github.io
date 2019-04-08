@@ -258,16 +258,22 @@ main p {
     font-size: 1.5em;
 }
 
+
 .footer {
     grid-area: footer;
-    box-sizing: border-box;
-    padding: 20px;
+    grid-gap: 2rem;
     background-color: var(--primary-color);
     color: #fff;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "footer-logo"
+        "footer-social"
+        "footer-links"
+        "copyright"
 }
+
+
 
 .footer-box {
     padding: 20px;
