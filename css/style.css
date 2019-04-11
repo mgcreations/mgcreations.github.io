@@ -346,6 +346,7 @@ main p {
 
 .portfolio-wrapper {
     grid-area: portfolio;
+    padding: 20px;
 }
 
 .artwork > div {
@@ -453,7 +454,19 @@ main p {
 
 .footer-links-box {
     grid-area: footer-links;
+    text-align: center;
 }
+
+.footer-links-box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links-box a:hover {
+    color: var(--secondary-text-color);
+}
+
+
 
 .copyright {
     grid-area: copyright;
@@ -461,7 +474,6 @@ main p {
 
 
 #copyright {
-    grid-column: span 3;
     text-align: center;
 }
 
