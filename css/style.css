@@ -517,7 +517,7 @@ main p {
         grid-template-areas: 
         "logo menu menu"
         "hero hero hero"
-        "content content sidebar"
+        "content content content"
         "portfolio portfolio portfolio"
         "footer footer footer";
     }
@@ -575,8 +575,32 @@ main p {
         line-height: 1.2;
     }
 
+    .features {
+        box-sizing: border-box;
+        padding: 20px;
+        color: var(--highlight-text-color);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 20px;
+    }
+    
+
+.feature-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+
     .footer-box img {
         max-width: 150px;
+    }
+
+    .social-inner {
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
 }
